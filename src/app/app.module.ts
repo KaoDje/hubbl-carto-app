@@ -3,10 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaperOverviewComponent } from './components/paper-overview/paper-overview.component';
+import { EarnLoginComponent } from './components/earn-login/earn-login.component';
+import { PaperListComponent } from './components/paper-list/paper-list.component';
+import { CartoComponent } from './components/carto/carto.component';
+import { CartoDashboardComponent } from './components/carto-dashboard/carto-dashboard.component';
+import { PaperComponent } from './components/paper/paper.component';
+import { EarnComponent } from './components/earn/earn.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaperOverviewComponent,
+    EarnLoginComponent,
+    PaperListComponent,
+    CartoComponent,
+    CartoDashboardComponent,
+    PaperComponent,
+    EarnComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

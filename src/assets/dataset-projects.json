@@ -1,0 +1,242 @@
+[
+  {
+    "name": "CryptoPunks",
+    "blockchain": ["ETH"],
+    "floorPrice": 198,
+    "fluctuation": 22
+  },
+  {
+    "name": "Bored Ape Yacht Club",
+    "blockchain": ["ETH"],
+    "floorPrice": 168,
+    "fluctuation": 27
+  },
+  {
+    "name": "ArtBlocks",
+    "blockchain": ["BTC", "ETH"],
+    "floorPrice": 154,
+    "fluctuation": -15
+  },
+  {
+    "name": "PixelPortraits",
+    "blockchain": ["BTC"],
+    "floorPrice": 137,
+    "fluctuation": 29
+  },
+  {
+    "name": "EtherealWorlds",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 114,
+    "fluctuation": 26
+  },
+  {
+    "name": "GalacticApes",
+    "blockchain": ["POL", "SOL"],
+    "floorPrice": 98,
+    "fluctuation": 19
+  },
+  {
+    "name": "DreamscapeNFT",
+    "blockchain": ["ATOM", "ETH", "POL"],
+    "floorPrice": 83,
+    "fluctuation": -19
+  },
+  {
+    "name": "SolanaSpheres",
+    "blockchain": ["SOL"],
+    "floorPrice": 74,
+    "fluctuation": -21
+  },
+  {
+    "name": "NiftyNebulas",
+    "blockchain": ["ETH"],
+    "floorPrice": 125,
+    "fluctuation": 12
+  },
+  {
+    "name": "BlockchainBeasts",
+    "blockchain": ["BTC", "ETH"],
+    "floorPrice": 64,
+    "fluctuation": 1
+  },
+  {
+    "name": "CyberLions",
+    "blockchain": ["ETH", "BSC"],
+    "floorPrice": 120,
+    "fluctuation": 15
+  },
+  {
+    "name": "MetaverseMammals",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 15,
+    "fluctuation": 20
+  },
+  {
+    "name": "QuantumQuokkas",
+    "blockchain": ["BTC", "ETH"],
+    "floorPrice": 110,
+    "fluctuation": -5
+  },
+  {
+    "name": "DigitalDinosaurs",
+    "blockchain": ["ETH", "SOL"],
+    "floorPrice": 140,
+    "fluctuation": 25
+  },
+  {
+    "name": "FuturisticFrogs",
+    "blockchain": ["ATOM", "ETH"],
+    "floorPrice": 90,
+    "fluctuation": 30
+  },
+  {
+    "name": "GalacticGeckos",
+    "blockchain": ["POL"],
+    "floorPrice": 10,
+    "fluctuation": -10
+  },
+  {
+    "name": "HolographicHippos",
+    "blockchain": ["ETH", "SOL"],
+    "floorPrice": 10,
+    "fluctuation": 18
+  },
+  {
+    "name": "InterstellarIguanas",
+    "blockchain": ["ATOM", "BTC"],
+    "floorPrice": 80,
+    "fluctuation": 2
+  },
+  {
+    "name": "JupiterJaguars",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 10,
+    "fluctuation": 22
+  },
+  {
+    "name": "KaleidoscopeKoalas",
+    "blockchain": ["POL"],
+    "floorPrice": 15,
+    "fluctuation": -7
+  },
+  {
+    "name": "LunarLemurs",
+    "blockchain": ["ETH", "BSC"],
+    "floorPrice": 17,
+    "fluctuation": 24
+  },
+  {
+    "name": "MarsMeerkats",
+    "blockchain": ["ATOM", "ETH"],
+    "floorPrice": 5,
+    "fluctuation": 13
+  },
+  {
+    "name": "NeptuneNarwhals",
+    "blockchain": ["BTC", "POL"],
+    "floorPrice": 125,
+    "fluctuation": 17
+  },
+  {
+    "name": "OrionOtters",
+    "blockchain": ["ETH", "SOL"],
+    "floorPrice": 4,
+    "fluctuation": 21
+  },
+  {
+    "name": "PulsarPenguins",
+    "blockchain": ["ATOM", "BTC"],
+    "floorPrice": 95,
+    "fluctuation": -5
+  },
+  {
+    "name": "QuasarQuails",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 10,
+    "fluctuation": 23
+  },
+  {
+    "name": "RadiantRaccoons",
+    "blockchain": ["BTC", "SOL"],
+    "floorPrice": 108,
+    "fluctuation": 8
+  },
+  {
+    "name": "SaturnSeals",
+    "blockchain": ["ETH", "BSC"],
+    "floorPrice": 17,
+    "fluctuation": 25
+  },
+  {
+    "name": "UranusUnicorns",
+    "blockchain": ["ATOM", "ETH"],
+    "floorPrice": 12,
+    "fluctuation": 10
+  },
+  {
+    "name": "VenusVixens",
+    "blockchain": ["POL"],
+    "floorPrice": 32,
+    "fluctuation": 19
+  },
+  {
+    "name": "WormholeWolves",
+    "blockchain": ["ETH", "SOL"],
+    "floorPrice": 52,
+    "fluctuation": 22
+  },
+  {
+    "name": "XenonXantus",
+    "blockchain": ["ATOM", "BTC"],
+    "floorPrice": 92,
+    "fluctuation": 3
+  },
+  {
+    "name": "YellowstoneYaks",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 62,
+    "fluctuation": 24
+  },
+  {
+    "name": "ZodiacZebras",
+    "blockchain": ["POL"],
+    "floorPrice": 7,
+    "fluctuation": 9
+  },
+  {
+    "name": "AlphaAlpacas",
+    "blockchain": ["ETH", "BSC"],
+    "floorPrice": 77,
+    "fluctuation": 26
+  },
+  {
+    "name": "BetaBats",
+    "blockchain": ["ATOM", "ETH"],
+    "floorPrice": 27,
+    "fluctuation": 12
+  },
+  {
+    "name": "GammaGiraffes",
+    "blockchain": ["POL"],
+    "floorPrice": 37,
+    "fluctuation": 20
+  },
+  {
+    "name": "DeltaDolphins",
+    "blockchain": ["ETH", "SOL"],
+    "floorPrice": 57,
+    "fluctuation": 23
+  },
+  {
+    "name": "EpsilonElephants",
+    "blockchain": ["ATOM", "BTC"],
+    "floorPrice": 97,
+    "fluctuation": 6
+  },
+  {
+    "name": "ZetaZebus",
+    "blockchain": ["ETH", "POL"],
+    "floorPrice": 67,
+    "fluctuation": 25
+  }
+]

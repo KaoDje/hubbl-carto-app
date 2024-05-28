@@ -1,0 +1,13 @@
+<svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6">
+<path d="M2 4C0.89543 4 -8.21754e-09 4.89543 0 6C8.21754e-09 7.10457 0.89543 8 2 8L2 4ZM9 8L11 8L11 4L9 4L9 8ZM2 8L9 8L9 4L2 4L2 8Z" fill="white"/>
+<path d="M19 4H17V8H19V4ZM46 8C47.1046 8 48 7.10457 48 6C48 4.89543 47.1046 4 46 4V8ZM19 8H46V4H19V8Z" fill="white"/>
+<circle cx="14" cy="6" r="4.5" stroke="white" stroke-width="3"/>
+<path d="M2 19C0.89543 19 0 19.8954 0 21C0 22.1046 0.89543 23 2 23V19ZM30 23H32V19H30V23ZM2 23H30V19H2V23Z" fill="white"/>
+<path d="M41 19H39V23H41V19ZM46 23C47.1046 23 48 22.1046 48 21C48 19.8954 47.1046 19 46 19V23ZM41 23H46V19H41V23Z" fill="white"/>
+<circle cx="35" cy="21" r="4.5" stroke="white" stroke-width="3"/>
+<path d="M2 34C0.89543 34 0 34.8954 0 36C0 37.1046 0.89543 38 2 38V34ZM16 38H18V34H16V38ZM2 38H16V34H2V38Z" fill="white"/>
+<path d="M26 34H24V38H26V34ZM46 38C47.1046 38 48 37.1046 48 36C48 34.8954 47.1046 34 46 34V38ZM26 38L46 38V34L26 34V38Z" fill="white"/>
+<circle cx="21" cy="36" r="4.5" stroke="white" stroke-width="3"/>
+</g>
+</svg>

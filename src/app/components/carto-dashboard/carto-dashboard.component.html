@@ -1,0 +1,29 @@
+<div class="container" [ngClass]="{ 'container-white-ui': isPaperActive }">
+  <div class="search-bar">
+    <input type="text" placeholder="Rechercher un projet NFT" />
+    <div class="icons-container">
+      <button id="searchButton">
+        <img
+          src="../../../assets/icon/icon-search-bar-search.svg"
+          alt="Search Button"
+        />
+      </button>
+      <button id="filterButton">
+        <img
+          src="../../../assets/icon/icon-search-bar-filter.svg"
+          alt="Filter Button"
+        />
+      </button>
+    </div>
+  </div>
+  <div class="spatial-filter">
+    <!-- <div
+        class="category-container"
+        *ngFor="let category of spatialFilterCategories"
+        (mousedown)="startDrag($event, category)"
+        draggable="true"
+      >
+        <p>{{ category }}</p>
+      </div> -->
+  </div>
+</div>

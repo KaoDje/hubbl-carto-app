@@ -1,0 +1,88 @@
+<div class="container container-white-ui">
+  <!-- <app-paper-overview *ngIf="isPaperActive"></app-paper-overview> -->
+
+  <div class="left-container">
+    <!-- Dashboard Filter -->
+    <div
+      class="dashboard-filter-container"
+      [ngClass]="{
+        'dashboard-filter-container-white-ui': isPaperActive
+      }"
+    >
+      <app-carto-dashboard
+        [isPaperActive]="isPaperActive"
+      ></app-carto-dashboard>
+    </div>
+    <!-- Menu -->
+    <div
+      class="navbar"
+      [ngClass]="{
+        'navbar-white-ui': isPaperActive
+      }"
+    >
+      <div
+        (click)="on_NavButton_Click($event)"
+        id="earnButton"
+        class="button-container"
+      >
+        <div class="img-container">
+          <div class="square-icon"></div>
+          <img
+            id="iconEarn"
+            src="../../../assets/icon/icon-earn-white.svg"
+            alt=""
+          />
+        </div>
+        <p>HUBBL<span>&nbsp;</span>EARN</p>
+      </div>
+      <div
+        (click)="on_NavButton_Click($event)"
+        id="cartoButton"
+        class="button-container active"
+      >
+        <div class="img-container">
+          <img
+            id="iconCarto"
+            src="../../../assets/icon/icon-carto-white.svg"
+            alt=""
+          />
+        </div>
+        <p>HUBBL<span>&nbsp;</span>CARTO</p>
+      </div>
+      <div
+        (click)="on_NavButton_Click($event)"
+        id="paperButton"
+        class="button-container"
+      >
+        <div class="img-container">
+          <div class="square-icon"></div>
+          <img
+            id="iconPaper"
+            src="../../../assets/icon/icon-paper-white.svg"
+            alt=""
+          />
+        </div>
+        <p>HUBBL<span>&nbsp;</span>PAPER</p>
+      </div>
+      <img
+        class="reverse-border-radius-1"
+        [ngClass]="{ 'reverse-border-active': isPaperActive }"
+        src="../../../assets/divers/reverse-border-radius.svg"
+        alt=""
+      />
+      <img
+        class="reverse-border-radius-2"
+        [ngClass]="{ 'reverse-border-active': isPaperActive }"
+        src="../../../assets/divers/reverse-border-radius.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <!-- Paper Container -->
+  <div
+    class="paper-container"
+    [ngClass]="{ 'paper-container-active': isPaperActive }"
+  >
+    <app-paper></app-paper>
+  </div>
+</div>

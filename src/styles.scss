@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+/**
+  * Font Loader
+*/
+
+@font-face {
+  font-family: "JW.Sans";
+  src: url("/src/assets/fonts/JW.Sans/JW.Sans-Light.otf") format("opentype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Light.ttf") format("truetype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Light.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JW.Sans";
+  src: url("/src/assets/fonts/JW.Sans/JW.Sans-Regular.otf") format("opentype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Regular.ttf") format("truetype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JW.Sans";
+  src: url("/src/assets/fonts/JW.Sans/JW.Sans-Medium.otf") format("opentype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Medium.ttf") format("truetype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JW.Sans";
+  src: url("/src/assets/fonts/JW.Sans/JW.Sans-Bold.otf") format("opentype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Bold.ttf") format("truetype")
+    url("/src/assets/fonts/JW.Sans/JW.Sans-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OffBit-Dot";
+  src: url("/assets/fonts/DOT/OffBitTrial-DotBold.otf") format("opentype"),
+    url("/src/assets/fonts/DOT/OffBitTrial-DotBold.ttf") format("truetype"),
+    url("/src/assets/fonts/DOT/offbit-dotbold-webfont.woff") format("woff"),
+    url("/src/assets/fonts/DOT/offbit-dotbold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

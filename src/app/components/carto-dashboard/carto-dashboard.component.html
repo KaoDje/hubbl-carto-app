@@ -17,13 +17,13 @@
     </div>
   </div>
   <div class="spatial-filter">
-    <!-- <div
-        class="category-container"
-        *ngFor="let category of spatialFilterCategories"
-        (mousedown)="startDrag($event, category)"
-        draggable="true"
-      >
-        <p>{{ category }}</p>
-      </div> -->
+    <div
+      class="category-container"
+      *ngFor="let category of spatialFilterCategories"
+      (mousedown)="startDrag($event, category)"
+      draggable="true"
+    >
+      <p>{{ category }}</p>
+    </div>
   </div>
 </div>

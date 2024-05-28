@@ -16,6 +16,7 @@ import {
   selectAll,
 } from 'd3';
 import { BubbleProject } from '../models/BubbleProject.models';
+import { DataService } from '../services/data.service';
 import { QuantitativeFilter } from './QuantitativeFilter.models';
 import { SpatialMarker } from './SpatialMarker.models';
 
@@ -41,7 +42,8 @@ export class BubbleChart {
     _parentElement: string,
     _projectsData: BubbleProject[],
     scaleFilter: QuantitativeFilter,
-    colorFilter: QuantitativeFilter
+    colorFilter: QuantitativeFilter,
+    private dataService: DataService
   ) {
     this.parentElement = _parentElement;
 
@@ -106,7 +108,7 @@ export class BubbleChart {
           .on('end', visualization.dragended)
       )
       .on('click', (event: MouseEvent, d: BubbleProject) => {
-        console.log(d);
+        this.dataService.selectedProject = d;
       });
 
     // Ajouter le cercle à l'intérieur de chaque groupe
@@ -170,7 +172,7 @@ export class BubbleChart {
       .attr('id', (d: SpatialMarker) => d.id)
       .attr('width', 64)
       .attr('height', 36)
-      .attr('href', '/assets/img/category-bg.svg')
+      .attr('href', '/assets/icon/bg-spatial-filter-category.svg')
       .attr('x', (d: SpatialMarker) => d.x)
       .attr('y', (d: SpatialMarker) => d.y);
 
@@ -226,7 +228,7 @@ export class BubbleChart {
       .attr('id', (d: SpatialMarker) => d.id)
       .attr('width', 64)
       .attr('height', 36)
-      .attr('href', '/assets/img/category-bg.svg')
+      .attr('href', '/assets/icon/bg-spatial-filter-category.svg')
       .attr('x', (d: SpatialMarker) => d.x)
       .attr('y', (d: SpatialMarker) => d.y)
       .attr('rx', 4)

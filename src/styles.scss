@@ -59,3 +59,50 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.attractor {
+  z-index: 1;
+  cursor: grab;
+  text {
+    font-weight: bold;
+  }
+}
+
+.attractor:active {
+  z-index: 1;
+  cursor: grabbing;
+}
+
+.bubble {
+  cursor: pointer;
+  text {
+    letter-spacing: 0.2px;
+    font-weight: 400;
+  }
+}
+
+.bubble:active {
+  cursor: grabbing;
+}
+
+.category-container-dragging {
+  width: 64px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: center / contain no-repeat
+    url("./assets/icon/bg-spatial-filter-category.svg");
+  transform: translate(-50%, -50%);
+  &:hover {
+    cursor: grabbing;
+  }
+  p {
+    margin: 0;
+    font-family: "JW.Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f3f3f3;
+  }
+}

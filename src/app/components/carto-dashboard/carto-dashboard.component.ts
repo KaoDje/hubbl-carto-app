@@ -5,6 +5,7 @@ import {
   Input,
   OnInit,
   Output,
+  ViewEncapsulation,
 } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
@@ -83,10 +84,20 @@ export class CartoDashboardComponent implements OnInit {
 
     this.draggingElement = categoryContainer.cloneNode(true) as HTMLElement; // Si je veux dupliquer l'élément
     // this.draggingElement = categoryContainer as HTMLElement; // Si je ne veux pas dupliquer l'élément
+
+    // Object.assign(this.draggingElement.style, {
+    //   position: 'absolute',
+    //   left: `${event.pageX}px`,
+    //   top: `${event.pageY}px`,
+    //   zIndex: '1000',
+    // });
     this.draggingElement.style.position = 'absolute';
     this.draggingElement.style.left = `${event.pageX}px`;
     this.draggingElement.style.top = `${event.pageY}px`;
+    this.draggingElement.style.zIndex = '1000';
+
     this.draggingElement.classList.add('category-container-dragging');
+
     document.body.appendChild(this.draggingElement);
 
     // Prévenir le comportement de drag par défaut
@@ -107,7 +118,7 @@ export class CartoDashboardComponent implements OnInit {
     const id = (event.target as HTMLElement).textContent;
     const x = event.pageX;
     const y = event.pageY;
-    // console.log(id, x, y);
+    console.log(id, x, y);
 
     if (id) {
       this.addSpatialMarkerEvent.emit({ id, x, y });

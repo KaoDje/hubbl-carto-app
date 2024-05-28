@@ -45,11 +45,61 @@
   }
 
   .spatial-filter {
-    height: 20px;
-    width: 900px;
-    background-color: green;
+    background-color: #353535;
     transform: translateX(calc(50% - 250px));
     transition: transform 300ms ease;
+
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .category-container {
+      width: 64px;
+      height: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: center / contain no-repeat
+        url("../../../assets/icon/bg-spatial-filter-category.svg");
+      &:hover {
+        cursor: grab;
+      }
+      &:active {
+        cursor: grabbing;
+      }
+      p {
+        margin: 0;
+        font-family: "JW.Sans", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #f3f3f3;
+      }
+    }
+
+    .category-container-dragging {
+      width: 64px;
+      height: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: center / contain no-repeat
+        url("../../../assets/icon/bg-spatial-filter-category.svg");
+      transform: translate(-50%, -50%);
+      &:hover {
+        cursor: grabbing;
+      }
+      p {
+        margin: 0;
+        font-family: "JW.Sans", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #f3f3f3;
+      }
+    }
   }
 }
 

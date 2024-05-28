@@ -17,6 +17,8 @@
   }
 
   .navbar {
+    z-index: 1;
+
     width: 500px;
     height: 110px;
     background-color: #353535;
@@ -121,6 +123,7 @@
   }
 
   .paper-container {
+    z-index: 0;
     align-self: flex-end;
     background-color: #202020;
     height: 0px;

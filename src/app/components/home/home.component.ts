@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   isPaperActive: boolean = false;
+
+  @Output() addSpatialMarkerEventHome = new EventEmitter<{
+    id: string;
+    x: number;
+    y: number;
+  }>();
+
+  @Output() removeSpatialMarkerEventHome = new EventEmitter<string>();
+
+  @Output() toggleQuantitativeFilterEventHome = new EventEmitter<string>();
 
   on_NavButton_Click(event: MouseEvent) {
     const targetElement = event.target as HTMLElement;
@@ -38,5 +49,17 @@ export class HomeComponent {
       (document.getElementById('iconEarn') as HTMLImageElement).src =
         '../../../assets/icon/icon-earn-white.svg';
     }
+  }
+
+  addSpatialMarkerEvent(marker: { id: string; x: number; y: number }) {
+    this.addSpatialMarkerEventHome.emit(marker);
+  }
+
+  removeSpatialMarkerEvent(markerId: string) {
+    this.removeSpatialMarkerEventHome.emit(markerId);
+  }
+
+  toggleQuantitativeFilterEvent(type: string) {
+    this.toggleQuantitativeFilterEventHome.emit(type);
   }
 }

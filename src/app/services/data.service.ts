@@ -8,6 +8,7 @@ import { BubbleProject } from '../models/BubbleProject.models';
 export class DataService {
   categories: string[] = ['BTC', 'ETH', 'POL'];
   projects!: BubbleProject[];
+
   constructor() {
     // fetch('../dataset-projects.json')
     //   .then((response) => response.json())

@@ -1,2 +1,6 @@
-<app-home></app-home>
 <svg id="bubble-chart-svg"></svg>
+<app-home
+  (addSpatialMarkerEventHome)="addSpatialMarkerEvent($event)"
+  (removeSpatialMarkerEventHome)="removeSpatialMarkerEvent($event)"
+  (toggleQuantitativeFilterEventHome)="toggleQuantitativeFilterEvent($event)"
+></app-home>

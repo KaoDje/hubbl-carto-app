@@ -1,5 +1,5 @@
 <div class="container container-white-ui">
-  <!-- <app-paper-overview *ngIf="isPaperActive"></app-paper-overview> -->
+  <!-- <app-paper-overview *ngIf=""></app-paper-overview> -->
 
   <div class="left-container">
     <!-- Dashboard Filter -->
@@ -11,6 +11,9 @@
     >
       <app-carto-dashboard
         [isPaperActive]="isPaperActive"
+        (addSpatialMarkerEvent)="addSpatialMarkerEvent($event)"
+        (removeSpatialMarkerEvent)="removeSpatialMarkerEvent($event)"
+        (toggleQuantitativeFilterEvent)="toggleQuantitativeFilterEvent($event)"
       ></app-carto-dashboard>
     </div>
     <!-- Menu -->

@@ -60,6 +60,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Julius";
+  src: url("./assets/fonts/Julius/JuliusSansOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .attractor {
   z-index: 1;
   cursor: grab;

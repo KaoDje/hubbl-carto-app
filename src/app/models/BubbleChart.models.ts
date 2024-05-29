@@ -42,8 +42,8 @@ export class BubbleChart {
     _parentElement: string,
     _projectsData: BubbleProject[],
     scaleFilter: QuantitativeFilter,
-    colorFilter: QuantitativeFilter,
-    private dataService: DataService
+    colorFilter: QuantitativeFilter
+    // private dataService: DataService
   ) {
     this.parentElement = _parentElement;
 
@@ -108,7 +108,7 @@ export class BubbleChart {
           .on('end', visualization.dragended)
       )
       .on('click', (event: MouseEvent, d: BubbleProject) => {
-        this.dataService.selectedProject = d;
+        // this.dataService.selectedProject = d;
       });
 
     // Ajouter le cercle à l'intérieur de chaque groupe

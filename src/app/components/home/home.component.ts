@@ -1,5 +1,12 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { EarnLoginComponent } from '../earn-login/earn-login.component';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +15,11 @@ import { DataService } from '../../services/data.service';
 })
 export class HomeComponent {
   isPaperActive: boolean = false;
+  isEarnActive: boolean = false;
+  earnContainerHeight: number = 0;
+
+  // @ViewChild(EarnLoginComponent, { static: false })
+  // earnLoginComponent!: EarnLoginComponent;
 
   @Output() addSpatialMarkerEventHome = new EventEmitter<{
     id: string;
@@ -19,6 +31,29 @@ export class HomeComponent {
 
   @Output() toggleQuantitativeFilterEventHome = new EventEmitter<string>();
 
+  onHeightChanged(height: number) {
+    this.earnContainerHeight = height;
+    if (this.isEarnActive) {
+      console.log(height);
+      if (height < 500) {
+        (
+          document.getElementById('earnContainer') as HTMLElement
+        ).style.height = `${height + 40}px`;
+      }
+    } else {
+      (
+        document.getElementById('earnContainer') as HTMLElement
+      ).style.height = `0px`;
+    }
+  }
+
+  // logEarnChildContainerHeight() {
+  //   if (this.earnLoginComponent) {
+  //     const heightChild = this.earnLoginComponent.getEarnChildContainerHeight();
+  //     console.log(heightChild);
+  //   }
+  // }
+
   on_NavButton_Click(event: MouseEvent) {
     const targetElement = event.target as HTMLElement;
     const buttonClicked = targetElement.closest('.button-container');
@@ -28,6 +63,35 @@ export class HomeComponent {
       }
       if (buttonClicked.id == 'paperButton') {
         this.toggleWhiteUI();
+      }
+      if (buttonClicked.id == 'earnButton') {
+        const earnContainer = document.getElementById(
+          'earnContainer'
+        ) as HTMLElement;
+        if (earnContainer) {
+          this.isEarnActive = !this.isEarnActive;
+          earnContainer.classList.toggle('left-container-active');
+
+          // if (this.isEarnActive) {
+          //   earnContainer.style.height =
+          //     this.earnLoginComponent.getEarnChildContainerHeight().toString() +
+          //     'px';
+          //   earnContainer.style.height = `${this.earnContainerHeight}px`;
+          //   setTimeout(() => {
+          //     console.log(this.earnContainerHeight);
+          //     earnContainer.style.transition = 'transition: all 300ms ease';
+          //     earnContainer.style.height = `${this.earnContainerHeight + 40}px`;
+          //   }, 100);
+          // } else {
+          //   earnContainer.classList.toggle('left-container-active');
+          //   earnContainer.style.height = '0px';
+          // }
+
+          // console.log(this.earnChildContainer);
+          // const earnChildContainerEl = this.earnChildContainer.nativeElement;
+          // const heightChild = earnChildContainerEl.scrollHeight;
+          // console.log(heightChild);
+        }
       }
     }
   }

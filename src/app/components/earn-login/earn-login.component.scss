@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  font-family: "JW.Sans";
+  font-size: 20px;
+
+  h3 {
+    font-family: "Julius";
+    font-size: 24px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .login-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      border: none;
+      font-size: 14px;
+    }
+    button {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

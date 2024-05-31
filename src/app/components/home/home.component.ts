@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   isEarnActive: boolean = false;
   earnContainerHeight: number = 0;
   isBubbleProjectSelected: boolean = false;
-  // projectSelected!: Project;
+  projectSelected!: Project;
   projectSelectedOverview!: { name: string; summary: string };
 
   // @ViewChild(EarnLoginComponent, { static: false })
@@ -41,18 +41,12 @@ export class HomeComponent implements OnInit {
     this.dataService.currentData.subscribe((data) => {
       if (data) {
         this.isBubbleProjectSelected = true;
-        // const project = this.dataService.projects2.find(
-        //   (item) => item.name === data
-        // );
-        // if (project) {
-        //   console.log(project);
-        //   this.projectSelected = project;
-        // }
-        const projectOverview = this.dataService.projects2
-          .find((item) => item.name === data)
-          ?.getOverview();
-        if (projectOverview) {
-          this.projectSelectedOverview = projectOverview;
+        const project = this.dataService.projects2.find(
+          (item) => item.name === data
+        );
+        if (project) {
+          this.projectSelected = project;
+          this.projectSelectedOverview = project.getOverview();
         }
       } else {
         this.isBubbleProjectSelected = false;
@@ -85,7 +79,9 @@ export class HomeComponent implements OnInit {
         buttonClicked.classList.toggle('active');
       }
       if (buttonClicked.id == 'paperButton') {
-        this.toggleWhiteUI();
+        if (this.isBubbleProjectSelected) {
+          this.toggleWhiteUI();
+        }
       }
       if (buttonClicked.id == 'earnButton') {
         const earnContainer = document.getElementById(

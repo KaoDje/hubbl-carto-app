@@ -47,7 +47,6 @@ export class CartoComponent implements OnInit {
 
     this.dataService.loadProjects2().subscribe({
       next: (projects) => {
-        console.log(projects);
         const bubbleProjects: BubbleProject[] = [];
         projects.forEach((project) => {
           const csm = project.paper.modules.find(

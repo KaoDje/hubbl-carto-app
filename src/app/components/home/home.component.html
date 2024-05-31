@@ -90,10 +90,10 @@
     [ngClass]="{ 'paper-container-active': isPaperActive }"
   >
     <app-paper></app-paper>
-  </div>
-  <div class="paper-overview-container">
-    <app-paper-overview
-      *ngIf="!isPaperActive && isBubbleProjectSelected"
-    ></app-paper-overview>
+    <div class="paper-overview-container">
+      <app-paper-overview
+        *ngIf="!isPaperActive && isBubbleProjectSelected"
+      ></app-paper-overview>
+    </div>
   </div>
 </div>

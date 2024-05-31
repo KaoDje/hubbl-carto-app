@@ -43,7 +43,14 @@ export class CartoComponent implements OnInit {
     });
 
     window.addEventListener('wheel', (event) => {
-      this.bubbleChart.zoom(event.deltaY < 0);
+      const elementUnderCursor = document.elementFromPoint(
+        event.clientX,
+        event.clientY
+      );
+
+      if (this.isCursorOverSVG(elementUnderCursor)) {
+        this.bubbleChart.zoom(event.deltaY < 0);
+      }
     });
 
     this.dataService.currentData.subscribe((data) => {
@@ -56,6 +63,18 @@ export class CartoComponent implements OnInit {
         // console.log('unselected');
       }
     });
+  }
+
+  isCursorOverSVG(element: Element | null): boolean {
+    if (!element) return false;
+
+    // Vérifiez si l'élément est le SVG lui-même
+    if (element.tagName.toLowerCase() === 'svg') {
+      return true;
+    }
+
+    // Vérifiez si l'élément est un enfant du SVG
+    return element.closest('svg') !== null;
   }
 
   addSpatialMarkerEvent(marker: { id: string; x: number; y: number }) {

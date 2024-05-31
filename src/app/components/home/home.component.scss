@@ -154,6 +154,7 @@
     padding-left: 0;
     transition: height 600ms ease, padding 500ms ease, width 800ms ease; /* Transition pour la hauteur et le padding */
     flex-shrink: 0;
+    position: relative;
   }
 
   .paper-container-active {
@@ -185,6 +186,6 @@
 
 .paper-overview-container {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 0;
+  left: 0;
 }

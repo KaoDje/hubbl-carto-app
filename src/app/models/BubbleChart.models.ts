@@ -27,8 +27,8 @@ export class BubbleChart {
   colorFilter!: QuantitativeFilter;
   projectsData!: BubbleProject[];
   initialBubbleRadius: number = 13;
-  simulationActivity: number = 0.04;
-  simulationAlpha: number = 0.08;
+  simulationActivity: number = 0.04 * 2;
+  simulationAlpha: number = 0.08 * 2;
   WIDTH: number = window.innerWidth;
   HEIGHT: number = window.innerHeight;
   svg!: any;

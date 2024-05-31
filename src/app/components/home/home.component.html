@@ -93,6 +93,7 @@
     <div class="paper-overview-container">
       <app-paper-overview
         *ngIf="!isPaperActive && isBubbleProjectSelected"
+        [projectOverview]="projectSelectedOverview"
       ></app-paper-overview>
     </div>
   </div>

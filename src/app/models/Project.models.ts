@@ -15,6 +15,8 @@ export class Project {
   addPaper(_paper: Paper) {
     this.paper = _paper;
   }
-  getOverview() {}
+  getOverview() {
+    return { name: this.name, summary: this.summary };
+  }
   getPaper() {}
 }

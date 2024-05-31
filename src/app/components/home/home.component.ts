@@ -6,6 +6,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
+import { Project } from '../../models/Project.models';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class HomeComponent implements OnInit {
   isEarnActive: boolean = false;
   earnContainerHeight: number = 0;
   isBubbleProjectSelected: boolean = false;
-  projectSelectedId!: string;
+  // projectSelected!: Project;
+  projectSelectedOverview!: { name: string; summary: string };
 
   // @ViewChild(EarnLoginComponent, { static: false })
   // earnLoginComponent!: EarnLoginComponent;
@@ -39,8 +41,19 @@ export class HomeComponent implements OnInit {
     this.dataService.currentData.subscribe((data) => {
       if (data) {
         this.isBubbleProjectSelected = true;
-        this.projectSelectedId = data;
-        console.log(data);
+        // const project = this.dataService.projects2.find(
+        //   (item) => item.name === data
+        // );
+        // if (project) {
+        //   console.log(project);
+        //   this.projectSelected = project;
+        // }
+        const projectOverview = this.dataService.projects2
+          .find((item) => item.name === data)
+          ?.getOverview();
+        if (projectOverview) {
+          this.projectSelectedOverview = projectOverview;
+        }
       } else {
         this.isBubbleProjectSelected = false;
         console.log('unselected');

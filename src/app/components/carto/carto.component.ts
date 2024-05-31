@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { BubbleChart } from '../../models/Carto/BubbleChart.models';
+import { BubbleProject } from '../../models/Carto/BubbleProject.models';
 import { QuantitativeFilter } from '../../models/Carto/QuantitativeFilter.models';
+import { CategorizationSubModule } from '../../models/Paper/SubModuleExtend/CategorizationSubModule.models';
+import { QuantitativeDataSubModule } from '../../models/Paper/SubModuleExtend/QuantitativeDataSubModule.models';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -16,9 +19,52 @@ export class CartoComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.loadProjects().subscribe({
+    // this.dataService.loadProjects().subscribe({
+    //   next: (projects) => {
+    //     const scaleFilter = new QuantitativeFilter({
+    //       type: 'scale',
+    //       limits: { min: 10, max: 50 },
+    //     });
+    //     const colorFilter = new QuantitativeFilter({
+    //       type: 'color',
+    //       limits: { min: 10, max: 50 },
+    //     });
+    //     try {
+    //       this.bubbleChart = new BubbleChart(
+    //         '#bubble-chart-svg',
+    //         projects,
+    //         scaleFilter,
+    //         colorFilter,
+    //         this.dataService
+    //       );
+    //     } catch (e) {
+    //       console.log(e);
+    //     }
+    //   },
+    //   error: (error) =>
+    //     console.error('Erreur lors du chargement des projets', error),
+    // });
+
+    this.dataService.loadProjects2().subscribe({
       next: (projects) => {
         console.log(projects);
+        const bubbleProjects: BubbleProject[] = [];
+        projects.forEach((project) => {
+          const csm = project.paper.modules.find(
+            (item) => item.stringId === 'categorization'
+          )?.subModules[0] as CategorizationSubModule;
+          const qdsm = project.paper.modules.find(
+            (item) => item.stringId === 'quantitative-data'
+          )?.subModules[0] as QuantitativeDataSubModule;
+          bubbleProjects.push(
+            new BubbleProject(
+              project.name,
+              csm.categories,
+              qdsm.floorPrice,
+              qdsm.sevenDayPercent
+            )
+          );
+        });
         const scaleFilter = new QuantitativeFilter({
           type: 'scale',
           limits: { min: 10, max: 50 },
@@ -30,7 +76,7 @@ export class CartoComponent implements OnInit {
         try {
           this.bubbleChart = new BubbleChart(
             '#bubble-chart-svg',
-            projects,
+            bubbleProjects,
             scaleFilter,
             colorFilter,
             this.dataService
@@ -38,14 +84,6 @@ export class CartoComponent implements OnInit {
         } catch (e) {
           console.log(e);
         }
-      },
-      error: (error) =>
-        console.error('Erreur lors du chargement des projets', error),
-    });
-
-    this.dataService.loadProjects2().subscribe({
-      next: (projects) => {
-        console.log(projects);
       },
       error: (error) =>
         console.error('Erreur lors du chargement des projets 2', error),

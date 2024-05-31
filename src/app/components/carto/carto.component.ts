@@ -10,6 +10,8 @@ import { DataService } from '../../services/data.service';
 })
 export class CartoComponent implements OnInit {
   bubbleChart!: BubbleChart;
+  isBubbleProjectSelected: boolean = false;
+  projectSelectedId!: string;
 
   constructor(private dataService: DataService) {}
 
@@ -29,7 +31,8 @@ export class CartoComponent implements OnInit {
             '#bubble-chart-svg',
             projects,
             scaleFilter,
-            colorFilter
+            colorFilter,
+            this.dataService
           );
         } catch (e) {
           console.log(e);
@@ -41,6 +44,17 @@ export class CartoComponent implements OnInit {
 
     window.addEventListener('wheel', (event) => {
       this.bubbleChart.zoom(event.deltaY < 0);
+    });
+
+    this.dataService.currentData.subscribe((data) => {
+      if (data) {
+        this.isBubbleProjectSelected = true;
+        this.projectSelectedId = data;
+        // console.log(data);
+      } else {
+        this.isBubbleProjectSelected = false;
+        // console.log('unselected');
+      }
     });
   }
 

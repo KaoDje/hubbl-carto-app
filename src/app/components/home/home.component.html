@@ -1,6 +1,4 @@
 <div class="container container-white-ui">
-  <!-- <app-paper-overview *ngIf=""></app-paper-overview> -->
-
   <div id="earnContainer" class="left-container">
     <app-earn-login (heightChanged)="onHeightChanged($event)"></app-earn-login>
     <!-- <app-earn-login></app-earn-login> -->
@@ -92,5 +90,10 @@
     [ngClass]="{ 'paper-container-active': isPaperActive }"
   >
     <app-paper></app-paper>
+  </div>
+  <div class="paper-overview-container">
+    <app-paper-overview
+      *ngIf="!isPaperActive && isBubbleProjectSelected"
+    ></app-paper-overview>
   </div>
 </div>

@@ -42,8 +42,8 @@ export class BubbleChart {
     _parentElement: string,
     _projectsData: BubbleProject[],
     scaleFilter: QuantitativeFilter,
-    colorFilter: QuantitativeFilter
-    // private dataService: DataService
+    colorFilter: QuantitativeFilter,
+    private dataService: DataService
   ) {
     this.parentElement = _parentElement;
 
@@ -78,7 +78,10 @@ export class BubbleChart {
 
     this.svg = select(visualization.parentElement)
       .attr('height', '100vh')
-      .attr('width', '100%');
+      .attr('width', '100%')
+      .on('click', (event: MouseEvent) => {
+        this.dataService.changeData(null);
+      });
 
     this.simulation = forceSimulation(this.projectsData)
       .force(
@@ -108,7 +111,8 @@ export class BubbleChart {
           .on('end', visualization.dragended)
       )
       .on('click', (event: MouseEvent, d: BubbleProject) => {
-        // this.dataService.selectedProject = d;
+        event.stopPropagation();
+        this.dataService.changeData(d.name);
       });
 
     // Ajouter le cercle à l'intérieur de chaque groupe
@@ -407,20 +411,6 @@ export class BubbleChart {
 
     // this.simulation.alpha(this.simulationAlpha).restart();
   }
-
-  // addSpatialMarker(id: string, x: number, y: number) {
-  //   const index = this.spatialMarkers.findIndex((e) => {
-  //     e.id === id;
-  //   });
-  //   if (index == -1) {
-  //     if (this.spatialMarkers.find((m) => m.id == id)) {
-  //       console.log(this.spatialMarkers[index]);
-  //     }
-  //     this.spatialMarkers.unshift(new SpatialMarker(id, x, y));
-  //     this.wrangleData();
-  //     // console.log("added with id : ", id);
-  //   }
-  // }
 
   addSpatialMarker(id: string, x: number, y: number) {
     const marker = this.spatialMarkers.find((m) => m.id == id);
@@ -842,7 +832,6 @@ export class BubbleChart {
     d.fy = event.y;
 
     if (d.attractor) {
-      // console.log(d);
       d.updateAttractorPosition(event.x, event.y);
     }
   };

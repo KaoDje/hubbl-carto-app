@@ -2,21 +2,23 @@ import {
   Component,
   ElementRef,
   EventEmitter,
+  OnInit,
   Output,
   ViewChild,
 } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { EarnLoginComponent } from '../earn-login/earn-login.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   isPaperActive: boolean = false;
   isEarnActive: boolean = false;
   earnContainerHeight: number = 0;
+  isBubbleProjectSelected: boolean = false;
+  projectSelectedId!: string;
 
   // @ViewChild(EarnLoginComponent, { static: false })
   // earnLoginComponent!: EarnLoginComponent;
@@ -30,6 +32,21 @@ export class HomeComponent {
   @Output() removeSpatialMarkerEventHome = new EventEmitter<string>();
 
   @Output() toggleQuantitativeFilterEventHome = new EventEmitter<string>();
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataService.currentData.subscribe((data) => {
+      if (data) {
+        this.isBubbleProjectSelected = true;
+        this.projectSelectedId = data;
+        console.log(data);
+      } else {
+        this.isBubbleProjectSelected = false;
+        console.log('unselected');
+      }
+    });
+  }
 
   onHeightChanged(height: number) {
     this.earnContainerHeight = height;
@@ -46,13 +63,6 @@ export class HomeComponent {
       ).style.height = `0px`;
     }
   }
-
-  // logEarnChildContainerHeight() {
-  //   if (this.earnLoginComponent) {
-  //     const heightChild = this.earnLoginComponent.getEarnChildContainerHeight();
-  //     console.log(heightChild);
-  //   }
-  // }
 
   on_NavButton_Click(event: MouseEvent) {
     const targetElement = event.target as HTMLElement;

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "CrytoPunks",
+    "summary": "Les CryptoPunks sont des images de 24 pixels sur 24 générées algorithmiquement, représentant toutes des personnages uniques dans un style punk.",
+    "paper": {
+      "module": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Le symbole de l'écosystème Ethereum",
+              "text": "Au delà de l'inspiration visuelle du mouvement punk, les CryptoPunks représente la rupture technologique qu'a engendré l'arrivée de la blockchain et notamment du projet Ethereum et du concept de smart contract, tout comme le mouvement punk londonien représente une rupture profonde dans la société en remettant en question les normes établies.\nSelon les premiers acquéreurs des CryptoPunks, être un holder signifie croire aux changement que va apporter Ethereum sur le web et dans notre société. Détenir un CryptoPunk s'est affirmé devant le monde entier que vous êtes convaicu que la blockchain va transformer le web, notamment à travers l'introduction de la propriété numérique."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Collectionnez vos Punks préférés",
+              "text": "Le 'CryptoPunk Art' désigne l'ensemble des œuvres artistiques uniques qui accompagnent chaque CryptoPunk. Ces créations visuelles représentent les différentes apparences et caractéristiques des Punks, allant des coiffures et vêtements distinctifs aux traits faciaux uniques.\nEn tant que propriétaire d'un CryptoPunk NFT, vous avez certains droits et privilèges liés au CryptoPunk Art. Voici une liste des droits accordés par la licence."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+              "data": {
+                "floorPrice": 17,
+                "7d%": -3.5
+              }
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"] // Valeurs possibles : "BTC", "ETH", "POL"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Cryptocademia",
+    "summary": "Cryptocademia est une plateforme éducative axée sur le Web 3.0 et les technologies de la blockchain. Apprenez en vous amusant !",
+    "paper": {
+      "module": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Chapitre 0 : Cryptocademia",
+              "text": "Cryptocademia est située dans une immense forêt peuplée d'arbres millénaires gigantesques dont les feuilles ne tombent jamais. Son exploitation a été strictement interdite depuis plusieurs années. Ramasser ne serait-ce qu'une branche pour la ramener chez soi est condamnable.\nLes jours de grand vent, les arbres émettent une mélodie mélancolique que l'on peut parfois entendre à des kilomètres. Ce sifflement mélodieux a la fâcheuse habitude de faire somnoler son auditoire."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Collectionnez vos Punks préférés",
+              "text": "“Apprendre en s'amusant”, un adage très apprécié par la communauté Cryptocademia. En effet, bien loin des cours classiques en ligne, cette plateforme a été pensé comme un véritable jeu-vidéo.\nVotre apprentissage ne consiste plus en une navigation vers l'inconnue ponctués par des partiels, mais bien en une vrai quête du savoir avec des défis journaliers, des trophées à aller récupérer à la force de votre cerveau, une progression dynamique et motivante, et enfin le plus important la découverte collective d'un univers passionnant.\nCryptoacademia ce n'est pas juste des cours mais bien tout un univers fantaisiste jouable en multijoueur. A travers votre avatar personnalisable grâce à votre progression, participez à des quêtes collectives, formez ou rejoignez un clan, partagez des ressources et gagnez tout un tas de récompenses."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+              "data": {
+                "floorPrice": 17,
+                "7d%": -3.5
+              }
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

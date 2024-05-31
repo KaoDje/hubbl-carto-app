@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BubbleChart } from '../../models/BubbleChart.models';
-import { QuantitativeFilter } from '../../models/QuantitativeFilter.models';
+import { BubbleChart } from '../../models/Carto/BubbleChart.models';
+import { QuantitativeFilter } from '../../models/Carto/QuantitativeFilter.models';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -18,6 +18,7 @@ export class CartoComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.loadProjects().subscribe({
       next: (projects) => {
+        console.log(projects);
         const scaleFilter = new QuantitativeFilter({
           type: 'scale',
           limits: { min: 10, max: 50 },
@@ -40,6 +41,14 @@ export class CartoComponent implements OnInit {
       },
       error: (error) =>
         console.error('Erreur lors du chargement des projets', error),
+    });
+
+    this.dataService.loadProjects2().subscribe({
+      next: (projects) => {
+        console.log(projects);
+      },
+      error: (error) =>
+        console.error('Erreur lors du chargement des projets 2', error),
     });
 
     window.addEventListener('wheel', (event) => {

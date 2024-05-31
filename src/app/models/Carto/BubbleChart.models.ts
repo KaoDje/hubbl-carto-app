@@ -15,8 +15,8 @@ import {
   select,
   selectAll,
 } from 'd3';
-import { BubbleProject } from '../models/BubbleProject.models';
-import { DataService } from '../services/data.service';
+import { DataService } from '../../services/data.service';
+import { BubbleProject } from './BubbleProject.models';
 import { QuantitativeFilter } from './QuantitativeFilter.models';
 import { SpatialMarker } from './SpatialMarker.models';
 

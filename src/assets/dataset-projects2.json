@@ -4,7 +4,7 @@
     "name": "CrytoPunks",
     "summary": "Les CryptoPunks sont des images de 24 pixels sur 24 générées algorithmiquement, représentant toutes des personnages uniques dans un style punk.",
     "paper": {
-      "module": [
+      "modules": [
         {
           "stringId": "lore",
           "subModules": [
@@ -28,10 +28,9 @@
           "subModules": [
             {
               "dataProvider": "HUBBL",
-              "data": {
-                "floorPrice": 17,
-                "7d%": -3.5
-              }
+
+              "floorPrice": 17,
+              "sevenDayPercent": -3.5
             }
           ]
         },
@@ -39,8 +38,8 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
-              "categories": ["ETH"] // Valeurs possibles : "BTC", "ETH", "POL"
+              "metaCategory": "Blockchain",
+              "categories": ["ETH"]
             }
           ]
         }
@@ -52,7 +51,7 @@
     "name": "Cryptocademia",
     "summary": "Cryptocademia est une plateforme éducative axée sur le Web 3.0 et les technologies de la blockchain. Apprenez en vous amusant !",
     "paper": {
-      "module": [
+      "modules": [
         {
           "stringId": "lore",
           "subModules": [
@@ -66,7 +65,7 @@
           "stringId": "usecase-features",
           "subModules": [
             {
-              "title": "Collectionnez vos Punks préférés",
+              "title": "Apprenez en vous amusant : gamification de l'apprentissage",
               "text": "“Apprendre en s'amusant”, un adage très apprécié par la communauté Cryptocademia. En effet, bien loin des cours classiques en ligne, cette plateforme a été pensé comme un véritable jeu-vidéo.\nVotre apprentissage ne consiste plus en une navigation vers l'inconnue ponctués par des partiels, mais bien en une vrai quête du savoir avec des défis journaliers, des trophées à aller récupérer à la force de votre cerveau, une progression dynamique et motivante, et enfin le plus important la découverte collective d'un univers passionnant.\nCryptoacademia ce n'est pas juste des cours mais bien tout un univers fantaisiste jouable en multijoueur. A travers votre avatar personnalisable grâce à votre progression, participez à des quêtes collectives, formez ou rejoignez un clan, partagez des ressources et gagnez tout un tas de récompenses."
             }
           ]
@@ -76,10 +75,805 @@
           "subModules": [
             {
               "dataProvider": "HUBBL",
-              "data": {
-                "floorPrice": 17,
-                "7d%": -3.5
-              }
+
+              "floorPrice": 0.2,
+              "sevenDayPercent": 34.7
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "EcoChain",
+    "summary": "EcoChain est une initiative blockchain dédiée à la traçabilité et à la transparence des chaînes d'approvisionnement écologiques.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Vers un avenir durable",
+              "text": "EcoChain symbolise l'engagement envers la durabilité en utilisant la blockchain pour assurer la transparence des chaînes d'approvisionnement. Chaque produit est traçable depuis son origine jusqu'à sa destination finale, garantissant des pratiques écologiques et équitables."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Suivi de la chaîne d'approvisionnement",
+              "text": "EcoChain permet aux utilisateurs de suivre l'origine et le parcours de leurs produits, assurant une production respectueuse de l'environnement. Grâce à la blockchain, les consommateurs peuvent vérifier la conformité écologique des produits qu'ils achètent."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+              "floorPrice": 1.5,
+              "sevenDayPercent": 12.3
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "ArtVerse",
+    "summary": "ArtVerse est une plateforme NFT dédiée aux artistes numériques pour vendre et échanger leurs œuvres dans le métavers.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Un nouvel univers pour les artistes",
+              "text": "ArtVerse offre un espace où les artistes numériques peuvent exposer leurs œuvres dans un environnement virtuel interactif. Cette plateforme permet une nouvelle forme d'expression artistique, rendant l'art plus accessible et immersif."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Vendez et échangez des NFT",
+              "text": "ArtVerse permet aux artistes de vendre leurs créations sous forme de NFT, assurant la propriété et l'authenticité de chaque œuvre. Les collectionneurs peuvent acheter, échanger et exposer leurs acquisitions dans le métavers."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 3.2,
+              "sevenDayPercent": 8.5
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "HealthChain",
+    "summary": "HealthChain utilise la blockchain pour sécuriser et gérer les dossiers médicaux des patients, assurant confidentialité et accessibilité.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Révolutionner les soins de santé",
+              "text": "HealthChain transforme la gestion des dossiers médicaux en utilisant la blockchain pour garantir la sécurité et la confidentialité des données des patients. Cette technologie permet un accès rapide et sécurisé aux informations médicales, améliorant ainsi les soins de santé."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion sécurisée des dossiers médicaux",
+              "text": "Grâce à HealthChain, les patients et les professionnels de santé peuvent gérer et consulter les dossiers médicaux de manière sécurisée et efficace. La blockchain assure l'intégrité des données et protège contre les accès non autorisés."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+              "floorPrice": 2.0,
+              "sevenDayPercent": 5.6
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "GameFi",
+    "summary": "GameFi combine les jeux vidéo et la finance décentralisée pour créer une nouvelle expérience ludique et rentable.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Le futur du gaming",
+              "text": "GameFi révolutionne l'industrie du jeu vidéo en intégrant des mécanismes de finance décentralisée. Les joueurs peuvent gagner des récompenses financières tout en s'amusant, créant ainsi une nouvelle économie ludique."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Jouez et gagnez",
+              "text": "Avec GameFi, chaque victoire en jeu se traduit par des gains financiers. Les joueurs peuvent participer à des tournois, accomplir des quêtes et échanger des objets virtuels pour augmenter leurs revenus."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 4.7,
+              "sevenDayPercent": 15.4
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH", "POL"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "MusicChain",
+    "summary": "MusicChain est une plateforme blockchain qui permet aux artistes de musique de publier, vendre et protéger leurs œuvres.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Réinventer l'industrie musicale",
+              "text": "MusicChain propose une nouvelle approche pour l'industrie musicale en utilisant la blockchain pour protéger les droits d'auteur et garantir des paiements équitables aux artistes. Chaque œuvre musicale est tokenisée, assurant transparence et propriété."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Publication et vente de musique",
+              "text": "Sur MusicChain, les artistes peuvent publier et vendre leurs œuvres directement aux fans sans intermédiaire. Chaque vente est enregistrée sur la blockchain, garantissant une rémunération juste et rapide."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+              "floorPrice": 1.8,
+              "sevenDayPercent": 9.2
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "GreenFinance",
+    "summary": "GreenFinance est une plateforme décentralisée de financement participatif dédiée aux projets écologiques et durables.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Investir dans un avenir vert",
+              "text": "GreenFinance permet aux utilisateurs d'investir dans des projets écologiques à travers des financements participatifs décentralisés. Chaque projet est évalué pour son impact environnemental, assurant une contribution positive à la planète."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Financement participatif décentralisé",
+              "text": "GreenFinance offre une plateforme où les investisseurs peuvent soutenir des projets durables et recevoir des rendements basés sur la performance écologique. La transparence de la blockchain assure un suivi clair des fonds et des impacts."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 2.3,
+              "sevenDayPercent": 10.1
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "EduChain",
+    "summary": "EduChain est une plateforme blockchain dédiée à la certification et à la gestion des diplômes et des compétences professionnelles.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Certification sécurisée et transparente",
+              "text": "EduChain assure la certification et la vérification des diplômes et des compétences professionnelles grâce à la blockchain. Chaque certificat est immuable et facilement vérifiable, éliminant la fraude et simplifiant les processus de recrutement."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion des compétences",
+              "text": "EduChain permet aux institutions éducatives de délivrer des diplômes sécurisés et aux entreprises de vérifier rapidement les qualifications des candidats. La blockchain assure la transparence et l'authenticité des informations."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 0.8,
+              "sevenDayPercent": 7.4
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "MedTrack",
+    "summary": "MedTrack utilise la blockchain pour suivre et gérer les essais cliniques et les données de recherche médicale.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Optimisation des essais cliniques",
+              "text": "MedTrack révolutionne les essais cliniques en assurant une gestion transparente et sécurisée des données. La blockchain permet de suivre chaque étape de la recherche médicale, garantissant l'intégrité et la transparence des résultats."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Suivi des données médicales",
+              "text": "MedTrack permet aux chercheurs et aux institutions médicales de gérer et de vérifier les données des essais cliniques de manière sécurisée. Les résultats sont immuables et accessibles en temps réel, améliorant l'efficacité des recherches."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.7,
+              "sevenDayPercent": 3.9
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "TravelChain",
+    "summary": "TravelChain est une plateforme décentralisée qui propose des services de réservation de voyage transparents et sécurisés.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Voyage sans frontières",
+              "text": "TravelChain permet aux utilisateurs de réserver des voyages de manière décentralisée, offrant des transactions sécurisées et des expériences personnalisées. La blockchain assure la transparence des prix et des services."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Réservation transparente",
+              "text": "Avec TravelChain, les voyageurs peuvent réserver des vols, des hôtels et des activités en toute confiance, sachant que chaque transaction est sécurisée par la blockchain. Les utilisateurs bénéficient de tarifs justes et d'un accès à des avis vérifiés."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 2.9,
+              "sevenDayPercent": 5.8
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH", "POL"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "FoodChain",
+    "summary": "FoodChain utilise la blockchain pour garantir la traçabilité des produits alimentaires de la ferme à la table.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Sécurité alimentaire renforcée",
+              "text": "FoodChain assure la traçabilité des produits alimentaires en utilisant la blockchain, garantissant la transparence de la chaîne d'approvisionnement et la sécurité des consommateurs. Chaque produit est suivi depuis sa production jusqu'à sa consommation."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Suivi de la chaîne alimentaire",
+              "text": "FoodChain permet aux consommateurs et aux producteurs de vérifier l'origine et la qualité des produits alimentaires. La blockchain assure une traçabilité complète et immuable, renforçant la confiance dans la chaîne d'approvisionnement alimentaire."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.4,
+              "sevenDayPercent": 4.2
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "RealEstateChain",
+    "summary": "RealEstateChain utilise la blockchain pour simplifier et sécuriser les transactions immobilières.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Révolutionner l'immobilier",
+              "text": "RealEstateChain facilite les transactions immobilières en utilisant la blockchain pour garantir la sécurité et la transparence. Les acheteurs et les vendeurs peuvent effectuer des transactions de manière plus efficace et sécurisée."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Transactions immobilières sécurisées",
+              "text": "Avec RealEstateChain, chaque transaction immobilière est enregistrée sur la blockchain, assurant ainsi la transparence et l'immutabilité des données. Les utilisateurs peuvent acheter, vendre et transférer des biens immobiliers en toute confiance."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 3.5,
+              "sevenDayPercent": 6.7
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH", "BTC"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "EnergyChain",
+    "summary": "EnergyChain est une plateforme blockchain dédiée à la gestion et à la traçabilité de l'énergie renouvelable.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Énergie renouvelable sécurisée",
+              "text": "EnergyChain utilise la blockchain pour assurer la traçabilité de l'énergie renouvelable, garantissant une production et une distribution transparentes et sécurisées. Cette technologie permet de suivre l'origine et l'utilisation de chaque unité d'énergie."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion de l'énergie",
+              "text": "EnergyChain permet aux producteurs et aux consommateurs de suivre la production et la consommation d'énergie renouvelable en temps réel. La blockchain garantit la transparence et l'efficacité de la gestion énergétique."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.9,
+              "sevenDayPercent": 4.8
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "SupplyChain",
+    "summary": "SupplyChain utilise la blockchain pour améliorer la gestion et la transparence des chaînes d'approvisionnement globales.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Transparence des chaînes d'approvisionnement",
+              "text": "SupplyChain assure une gestion transparente et efficace des chaînes d'approvisionnement en utilisant la blockchain. Chaque étape du processus est enregistrée de manière immuable, garantissant la traçabilité et l'intégrité des données."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion des chaînes d'approvisionnement",
+              "text": "SupplyChain permet aux entreprises de suivre et de gérer leurs chaînes d'approvisionnement globales de manière sécurisée. La blockchain assure la transparence, la fiabilité et l'efficacité des processus logistiques."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 2.4,
+              "sevenDayPercent": 5.3
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH", "POL"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "HealthNet",
+    "summary": "HealthNet est une plateforme blockchain pour la gestion sécurisée des données de santé et des dossiers médicaux.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Sécurité des données de santé",
+              "text": "HealthNet utilise la blockchain pour sécuriser les données de santé et les dossiers médicaux. Les patients et les professionnels de santé peuvent accéder aux informations de manière sécurisée et transparente, améliorant la qualité des soins."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion des dossiers médicaux",
+              "text": "HealthNet permet une gestion sécurisée et efficace des dossiers médicaux, assurant la confidentialité et l'intégrité des données. Les patients peuvent partager leurs informations de manière sécurisée avec les professionnels de santé."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.6,
+              "sevenDayPercent": 6.1
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "AgricChain",
+    "summary": "AgricChain utilise la blockchain pour optimiser la traçabilité et la gestion des produits agricoles.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Traçabilité des produits agricoles",
+              "text": "AgricChain permet une traçabilité complète des produits agricoles, de la ferme à l'assiette. La blockchain assure une transparence totale et une gestion efficace de la chaîne d'approvisionnement agricole."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Gestion des produits agricoles",
+              "text": "AgricChain offre des outils pour suivre et gérer les produits agricoles tout au long de la chaîne d'approvisionnement. Les producteurs et les consommateurs bénéficient d'une transparence accrue et d'une confiance renforcée."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.3,
+              "sevenDayPercent": 3.7
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "MediaChain",
+    "summary": "MediaChain est une plateforme blockchain pour la distribution sécurisée et équitable des contenus médiatiques.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Distribution médiatique équitable",
+              "text": "MediaChain utilise la blockchain pour assurer une distribution sécurisée et équitable des contenus médiatiques. Les créateurs de contenu peuvent publier et monétiser leurs œuvres en toute transparence, garantissant des revenus justes."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Monétisation des contenus",
+              "text": "MediaChain permet aux créateurs de contenu de publier et de monétiser leurs œuvres en utilisant la blockchain. Les transactions sont transparentes et sécurisées, assurant une rémunération équitable pour chaque création."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 2.1,
+              "sevenDayPercent": 4.5
+            }
+          ]
+        },
+        {
+          "stringId": "categorization",
+          "subModules": [
+            {
+              "meta-category": "Blockchain",
+              "categories": ["ETH", "BTC"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "VoteChain",
+    "summary": "VoteChain utilise la blockchain pour sécuriser et transparenter les processus de vote électronique.",
+    "paper": {
+      "modules": [
+        {
+          "stringId": "lore",
+          "subModules": [
+            {
+              "title": "Révolution démocratique",
+              "text": "VoteChain transforme les processus de vote en utilisant la blockchain pour garantir la sécurité, la transparence et l'intégrité des élections. Chaque vote est immuable et vérifiable, renforçant la confiance des électeurs."
+            }
+          ]
+        },
+        {
+          "stringId": "usecase-features",
+          "subModules": [
+            {
+              "title": "Vote électronique sécurisé",
+              "text": "Avec VoteChain, les électeurs peuvent voter de manière sécurisée et confidentielle. La blockchain assure que chaque vote est enregistré de manière immuable et transparente, éliminant les fraudes et renforçant la confiance dans le processus électoral."
+            }
+          ]
+        },
+        {
+          "stringId": "quantitative-data",
+          "subModules": [
+            {
+              "dataProvider": "HUBBL",
+
+              "floorPrice": 1.2,
+              "sevenDayPercent": 2.9
             }
           ]
         },

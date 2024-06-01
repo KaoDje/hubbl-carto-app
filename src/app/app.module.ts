@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaperOverviewComponent } from './components/paper-overview/paper-overview.component';
-import { EarnLoginComponent } from './components/earn-login/earn-login.component';
-import { PaperListComponent } from './components/paper-list/paper-list.component';
-import { CartoComponent } from './components/carto/carto.component';
 import { CartoDashboardComponent } from './components/carto-dashboard/carto-dashboard.component';
-import { PaperComponent } from './components/paper/paper.component';
+import { CartoComponent } from './components/carto/carto.component';
+import { EarnLoginComponent } from './components/earn-login/earn-login.component';
 import { EarnComponent } from './components/earn/earn.component';
 import { HomeComponent } from './components/home/home.component';
+import { PaperListComponent } from './components/paper-list/paper-list.component';
+import { PaperOverviewComponent } from './components/paper-overview/paper-overview.component';
+import { PaperSubmoduleComponent } from './components/paper-submodule/paper-submodule.component';
+import { PaperComponent } from './components/paper/paper.component';
+import { PaperModuleComponent } from './paper-module/paper-module.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,12 @@ import { HomeComponent } from './components/home/home.component';
     CartoDashboardComponent,
     PaperComponent,
     EarnComponent,
-    HomeComponent
+    HomeComponent,
+    PaperSubmoduleComponent,
+    PaperModuleComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

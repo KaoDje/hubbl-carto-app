@@ -5,8 +5,103 @@
       <h1>{{ project.name }}</h1>
     </div>
   </div>
-  <div class="content-container">
-    <div class="paper-overview-container"></div>
-    <div class="paper-content-container"></div>
+  <div data-simplebar class="content-container">
+    <div class="paper-overview-container">
+      <div class="date-category-container">
+        <p><span>Date de création : </span>2018</p>
+        <p><span>Catégories : </span>Gaming</p>
+        <button id="contributeButton">
+          <img src="../../../assets/icon/icon-earn-black.svg" alt="" />
+          <p>CONTRIBUER</p>
+        </button>
+      </div>
+      <p>{{ project.summary }}</p>
+      <div class="project-data">
+        <div class="data-item">
+          <div class="up">
+            <p class="data">130 ETH</p>
+            <div class="indicator">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="#3bd43b"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 2L22 22H2L12 2Z" />
+              </svg>
+              <p>24% (7d)</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="metric">Floor Price</p>
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="up">
+            <p class="data">68.410 ETH</p>
+            <div class="indicator">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="#3bd43b"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 2L22 22H2L12 2Z" />
+              </svg>
+              <p>24% (7d)</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="metric">Total Volume</p>
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="up">
+            <p class="data">3640 (36%)</p>
+            <!-- <div class="indicator">
+              <div class="triangle"></div>
+              <p></p>
+            </div> -->
+          </div>
+          <div class="bottom">
+            <p class="metric">Owners (Unique)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="paper-content-container">
+      <div class="rubriques-container">
+        <app-paper-module
+          *ngFor="let module of project.paper.modules"
+          [module]="module"
+        ></app-paper-module>
+        <!-- <section class="module" id="lore">
+          <h2>Découvrir son univers</h2>
+          <div class="separator"></div>
+          <div class="submodules-container">
+            <app-paper-submodule></app-paper-submodule>
+            <app-paper-submodule></app-paper-submodule>
+          </div>
+        </section>
+        <section class="module" id="usecase">
+          <h2>Comprendre son usage</h2>
+          <div class="separator"></div>
+          <div class="submodules-container">
+            <app-paper-submodule></app-paper-submodule>
+            <app-paper-submodule></app-paper-submodule>
+          </div>
+        </section>
+        <section class="module" id="history">
+          <h2>Remonter son histoire</h2>
+          <div class="separator"></div>
+          <div class="submodules-container">
+            <app-paper-submodule></app-paper-submodule>
+            <app-paper-submodule></app-paper-submodule>
+          </div>
+        </section> -->
+      </div>
+    </div>
   </div>
 </div>

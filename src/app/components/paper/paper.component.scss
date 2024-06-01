@@ -1,26 +1,31 @@
 .container {
-  width: 100%;
+  width: 900px;
   height: 100%;
   background-color: #f3f3f3;
   border-radius: 30px;
   border-bottom-left-radius: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  // gap: 30px;
+
+  font-family: "JW.Sans";
 
   .paper-header-container {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     .banner {
       width: 100%;
-      height: 115px;
+      height: 100px;
       background: top no-repeat
         url("../../../assets/projects/banner/cryptopunks-banner.png");
       border-radius: 30px;
     }
     .name-container {
       position: absolute;
-      bottom: -35px;
+      bottom: -30px;
       padding: 0 50px;
-      height: 90px;
+      height: 67px;
       background-color: #f3f3f3eb;
       border: solid 1px #fff;
       border-radius: 45px;
@@ -31,9 +36,162 @@
       align-items: center;
       h1 {
         font-family: "JW.Sans";
-        font-size: 64px;
+        font-size: 48px;
         text-transform: uppercase;
         transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* Thumb de la scrollbar */
+  .simplebar-scrollbar::before {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  /* Track de la scrollbar */
+  .simplebar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  /* Personnaliser la scrollbar au survol */
+  .simplebar-scrollbar:hover::before {
+    background-color: #555;
+  }
+
+  /* Largeur de la scroll bar */
+  ::-webkit-scrollbar {
+    width: 15px; /* Pour les scrollbars verticales */
+  }
+
+  /* Fond de la scroll bar */
+  ::-webkit-scrollbar-track {
+    background: #d3d3d3;
+    border-radius: 10px;
+  }
+
+  /* Partie mobile de la scroll bar */
+  ::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+    border-radius: 10px;
+  }
+
+  /* Au survol de la partie mobile de la scroll bar */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .content-container {
+    // margin-bottom: 50px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    padding-top: 50px;
+    // width: 500px;
+    width: fit-content;
+    margin: 0 20px 50px 20px;
+    .paper-overview-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .date-category-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        p {
+          span {
+            opacity: 60%;
+          }
+        }
+        #contributeButton {
+          border: none;
+          background-color: #20202015;
+          padding: 5px 15px 5px 10px;
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          p {
+            font-family: "JW.Sans";
+            font-weight: 500;
+            font-size: 18px;
+            transform: translateY(1px);
+          }
+        }
+      }
+      .project-data {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 16px;
+
+        .data-item {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
+          .up {
+            display: flex;
+            gap: 10px;
+
+            .indicator {
+              color: #3bd43b;
+              display: flex;
+              align-items: baseline;
+              gap: 5px;
+              svg {
+                vertical-align: baseline;
+                transform: translateY(1px);
+              }
+            }
+          }
+
+          .bottom {
+            p.metric {
+              color: #202020;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+    .paper-content-container {
+      // overflow-y: visible;
+      .rubriques-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .module {
+          h2 {
+            font-family: "JW.Sans", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .separator {
+            height: 1px;
+            background-color: #d3d3d3;
+            margin: 10px 0;
+          }
+          .submodules-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
       }
     }
   }

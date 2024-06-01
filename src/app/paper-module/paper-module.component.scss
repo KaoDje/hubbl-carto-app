@@ -1,0 +1,18 @@
+.module {
+  h2 {
+    font-family: "JW.Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .separator {
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 10px 0;
+  }
+  .submodules-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

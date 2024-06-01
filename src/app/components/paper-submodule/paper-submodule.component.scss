@@ -1,0 +1,42 @@
+.submodule {
+  padding: 0px 30px 20px 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow-y: hidden;
+  height: 50px;
+  position: relative;
+  transition: all 300ms ease;
+  .open-submodule-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arrow {
+      width: 15px;
+      height: 15px;
+      border-left: solid 3px #202020;
+      border-bottom: solid 3px #202020;
+      transform: translateY(-3px) rotate(-45deg);
+      transition: transform 300ms ease;
+    }
+    .arrow-active {
+      transform: translateY(3px) rotate(135deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h3 {
+    margin: 13px 0;
+    font-size: 20px;
+  }
+  &.active {
+    padding: 0px 30px 0px 30px;
+  }
+}

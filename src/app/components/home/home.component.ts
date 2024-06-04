@@ -38,6 +38,9 @@ export class HomeComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
+    // alert(
+    //   'Actuellement, toutes les données présentées dans notre cartographie sont fictives.'
+    // );
     this.dataService.currentData.subscribe((data) => {
       if (data) {
         this.isBubbleProjectSelected = true;

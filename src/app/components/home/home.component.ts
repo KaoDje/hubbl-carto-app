@@ -51,6 +51,9 @@ export class HomeComponent implements OnInit {
       } else {
         this.isBubbleProjectSelected = false;
         console.log('unselected');
+        if (this.isPaperActive) {
+          this.toggleWhiteUI();
+        }
       }
     });
   }
@@ -75,41 +78,19 @@ export class HomeComponent implements OnInit {
     const targetElement = event.target as HTMLElement;
     const buttonClicked = targetElement.closest('.button-container');
     if (buttonClicked) {
-      if (buttonClicked.id != 'cartoButton') {
-        buttonClicked.classList.toggle('active');
-      }
       if (buttonClicked.id == 'paperButton') {
         if (this.isBubbleProjectSelected) {
           this.toggleWhiteUI();
         }
       }
       if (buttonClicked.id == 'earnButton') {
+        buttonClicked.classList.toggle('active');
         const earnContainer = document.getElementById(
           'earnContainer'
         ) as HTMLElement;
         if (earnContainer) {
           this.isEarnActive = !this.isEarnActive;
           earnContainer.classList.toggle('left-container-active');
-
-          // if (this.isEarnActive) {
-          //   earnContainer.style.height =
-          //     this.earnLoginComponent.getEarnChildContainerHeight().toString() +
-          //     'px';
-          //   earnContainer.style.height = `${this.earnContainerHeight}px`;
-          //   setTimeout(() => {
-          //     console.log(this.earnContainerHeight);
-          //     earnContainer.style.transition = 'transition: all 300ms ease';
-          //     earnContainer.style.height = `${this.earnContainerHeight + 40}px`;
-          //   }, 100);
-          // } else {
-          //   earnContainer.classList.toggle('left-container-active');
-          //   earnContainer.style.height = '0px';
-          // }
-
-          // console.log(this.earnChildContainer);
-          // const earnChildContainerEl = this.earnChildContainer.nativeElement;
-          // const heightChild = earnChildContainerEl.scrollHeight;
-          // console.log(heightChild);
         }
       }
     }

@@ -59,6 +59,7 @@
         (click)="on_NavButton_Click($event)"
         id="paperButton"
         class="button-container"
+        [ngClass]="{ active: isBubbleProjectSelected }"
       >
         <div class="img-container">
           <div class="square-icon"></div>

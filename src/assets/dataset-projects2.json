@@ -85,7 +85,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -131,7 +131,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -178,7 +178,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -224,7 +224,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -271,7 +271,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH", "POL"]
             }
           ]
@@ -317,7 +317,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -364,7 +364,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -411,7 +411,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -458,7 +458,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -505,7 +505,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH", "POL"]
             }
           ]
@@ -552,7 +552,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -599,7 +599,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH", "BTC"]
             }
           ]
@@ -646,7 +646,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -693,7 +693,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH", "POL"]
             }
           ]
@@ -740,7 +740,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -787,7 +787,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]
@@ -834,7 +834,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH", "BTC"]
             }
           ]
@@ -881,7 +881,7 @@
           "stringId": "categorization",
           "subModules": [
             {
-              "meta-category": "Blockchain",
+              "metaCategory": "Blockchain",
               "categories": ["ETH"]
             }
           ]

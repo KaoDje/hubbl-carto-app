@@ -8,10 +8,11 @@ import { EarnLoginComponent } from './components/earn-login/earn-login.component
 import { EarnComponent } from './components/earn/earn.component';
 import { HomeComponent } from './components/home/home.component';
 import { PaperListComponent } from './components/paper-list/paper-list.component';
+import { PaperModuleComponent } from './components/paper-module/paper-module.component';
 import { PaperOverviewComponent } from './components/paper-overview/paper-overview.component';
 import { PaperSubmoduleComponent } from './components/paper-submodule/paper-submodule.component';
 import { PaperComponent } from './components/paper/paper.component';
-import { PaperModuleComponent } from './paper-module/paper-module.component';
+import { ModuleTitleTransformerPipe } from './pipes/module-title-transformer.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PaperModuleComponent } from './paper-module/paper-module.component';
     HomeComponent,
     PaperSubmoduleComponent,
     PaperModuleComponent,
+    ModuleTitleTransformerPipe,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

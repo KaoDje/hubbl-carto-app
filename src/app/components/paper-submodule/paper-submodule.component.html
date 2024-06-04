@@ -1,22 +1,27 @@
 <div class="submodule">
-  <h3>Les choix artistiques et leurs inspirations</h3>
+  <h3>{{ subModuleTitle }}</h3>
   <div class="open-submodule-button" (click)="toggleSubmodule($event)">
     <div class="arrow"></div>
   </div>
-  <p>
-    Des punk en pixel art avec des fonds colorés. Les Cryptopunks ont lancé le
-    pixel art, surtout dans l’univers crypto
-    <br /><br />
-    Matt Hall et John Watkinson attestent qu’il existait un mindset rebel,
-    contestataire, anti-institutionnel dès les premiers instants du mouvement
-    Blockchain. C’est de cette ambiance que ce sont inspirés les auteurs pour le
-    look des CryptoPunks.
-    <br /><br />
-    “Les CryptoPunks doivent incarner une collection de personnages marginaux et
-    anti-conformistes” — M. Hall, J. Watkinson.
-    <br /><br />
-    Le mouvement punk Londonien des années 1970, l’esprit Cyberpunk, le film
-    Blader Runner et le roman Neurommancier ont donc été les inspirations
-    principales.
-  </p>
+  <div
+    class="content-container text"
+    *ngIf="stringId == 'lore' || stringId == 'usecase-features'"
+  >
+    <p>{{ subModuleText }}</p>
+  </div>
+  <div
+    class="content-container categories"
+    *ngIf="stringId == 'categorization'"
+  >
+    <p *ngFor="let category of subModuleCategories">{{ category }}</p>
+  </div>
+  <div
+    class="content-container quantitative-data"
+    *ngIf="stringId == 'quantitative-data'"
+  >
+    <p>Les données présentées ici sont totalement fictives pour le moment.</p>
+    <p *ngFor="let data of this.subModuleDatas">
+      {{ data.metricName }} : {{ data.metricValue }}
+    </p>
+  </div>
 </div>

@@ -1,0 +1,12 @@
+<section class="module" id="">
+  <h2>{{ module.stringId | moduleTitleTransformer }}</h2>
+  <div class="separator"></div>
+  <div class="submodules-container">
+    <ng-container *ngFor="let subModule of module.subModules">
+      <app-paper-submodule
+        [subModule]="subModule"
+        [stringId]="module.stringId"
+      ></app-paper-submodule>
+    </ng-container>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Module } from '../models/Paper/Module.models';
+import { Module } from '../../models/Paper/Module.models';
 
 @Component({
   selector: 'app-paper-module',

@@ -15,13 +15,15 @@
 
   h3 {
     font-family: "Julius";
-    font-size: 24px;
+    font-size: 28px;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 22px;
+    font-weight: 400;
   }
 
   .login-button-container {
@@ -33,11 +35,31 @@
 
     p {
       border: none;
-      font-size: 14px;
+      font-size: 16px;
     }
     button {
+      font-family: "JW.Sans";
       font-size: 20px;
       font-weight: bold;
+      cursor: pointer;
+      border-radius: 50px;
+      background-color: #dedede;
+      border: none;
+      padding: 10px 20px 10px 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 300ms ease;
+      img {
+        height: 25px;
+        transition: transform 300ms ease;
+      }
+      &:hover {
+        transform: translate(2px, -1px);
+        img {
+          transform: rotate(-360deg);
+        }
+      }
     }
   }
 }

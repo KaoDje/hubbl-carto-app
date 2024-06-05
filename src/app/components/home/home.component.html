@@ -94,7 +94,7 @@
       *ngIf="isBubbleProjectSelected"
       [project]="projectSelected"
     ></app-paper>
-    <div class="paper-overview-container">
+    <div class="paper-overview-container" (click)="on_paperOverview_Click()">
       <app-paper-overview
         *ngIf="!isPaperActive && isBubbleProjectSelected"
         [projectOverview]="projectSelectedOverview"

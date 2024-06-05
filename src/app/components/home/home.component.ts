@@ -22,9 +22,6 @@ export class HomeComponent implements OnInit {
   projectSelected!: Project;
   projectSelectedOverview!: { name: string; summary: string };
 
-  // @ViewChild(EarnLoginComponent, { static: false })
-  // earnLoginComponent!: EarnLoginComponent;
-
   @Output() addSpatialMarkerEventHome = new EventEmitter<{
     id: string;
     x: number;
@@ -97,6 +94,10 @@ export class HomeComponent implements OnInit {
         }
       }
     }
+  }
+
+  on_paperOverview_Click() {
+    this.toggleWhiteUI();
   }
 
   toggleWhiteUI() {
